@@ -10,7 +10,7 @@ router.get('/add-user',function(req,res,next){
 })
 
 router.post('/add-user/user',function(req,res,next){
-    users.push({title: req.body.title});
+    users.push({name: req.body.name});
     res.redirect('/users');
 })
 
